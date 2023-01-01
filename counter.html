@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <h1 style="color:rgb(73, 75, 78)">Counter</h1>
+    <button onclick = "count()">Click</button>
+    <button onclick = "reset()">Reset</button>
+    <button onclick = "sum()">Sum</button>
+    <button onclick="minus()">Minus</button>
+</head>
+<body>
+    
+
+    <script>
+       let counter = 0;
+    //    function count(){
+    //        counter++;
+    //        alert(counter);
+    //    }
+
+    function count(){
+        counter++;
+        document.querySelector('h1').innerHTML = counter;
+    }
+
+    function reset(){
+        counter = 0;
+        document.querySelector('h1').innerHTML = counter;
+    }
+
+    function sum(){
+        counter ++;
+
+        document.querySelector('h1').innerHTML = counter ;
+    //    const counter = document.querySelector('h1');
+    //     if(counter === 0 ){
+    //         counter.innerHTML = counter++;
+    //     }
+    }
+
+    function minus(){
+        counter--;
+        document.querySelector('h1').innerHTML =  counter;
+    }
+    </script>
+</body>
+</html>
